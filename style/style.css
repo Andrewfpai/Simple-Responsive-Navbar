@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar, #navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #b6b6b6;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.items {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.navbar a {
+  text-decoration: none;
+  padding: 14px 20px;
+  font-size: 20px;
+  color: black;
+}
+
+.navbar ul li a {
+  display: block;
+}
+
+.logo {
+  font-size: 20px;
+  color: black;
+  padding: 14px 20px;
+  cursor: pointer;
+}
+
+.items a:hover {
+  opacity: 0.5;
+  background-color: black;
+}
+
+.icon1, .icon2 {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .icon1 {
+    background: black;
+    position: absolute;
+    display: block;
+    padding: 14px 16px;
+    left: 0;
+    top: 0;
+    float: left;
+    z-index: 2;
+  }
+  .logo {
+    margin-left: 50px;
+  }
+  .topbar {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    float: left;
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: orange;
+    width: 150px;
+    height: 100%;
+    margin-left: -150px;
+  }
+  .topbar .items {
+    margin: 8px 10px;
+  }
+  .icon2 {
+    display: block;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+  .navbar_popup {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .navbar_popup .topbar {
+    margin-left: 0;
+  }
+  .navbar_popup .items a:hover {
+    color: white;
+    opacity: 1;
+    background-color: orange;
+  }
+}
+/*# sourceMappingURL=style.css.map */
